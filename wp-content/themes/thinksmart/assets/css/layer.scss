@@ -1,0 +1,48 @@
+
+.header-menu {
+	padding: 30px 0;
+	font-weight: 600;
+	a {
+		color: $blue;
+	}
+}
+.h-menu {
+	ul {
+		list-style: none;
+	    display: flex;
+	    width: 100%;
+	    justify-content: space-between;
+	    align-items: center;
+	    .fa-home {
+	    	font-size: 30px;
+	    }
+	}
+}
+
+footer {
+	padding: 30px 0;
+}
+.content-footer {
+	font-size: 14px;
+	ul {
+		list-style: none;
+		li {
+			margin-bottom: 5px;
+		}
+		a {
+			color: $blue;
+		}
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+}
+.title-ft {
+    font-size: 18px;
+    font-weight: 600;
+    color: $red;
+    margin-bottom: 18px;
+}
+.fanpage {
+    margin-bottom: 20px;
+}
