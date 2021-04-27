@@ -183,3 +183,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+add_filter( 'the_content', 'my_last_updated_date' );
+
+add_filter('acf/load_field/name=color', 'acf_load_color_field_choices');
+
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' => 'Cài Đặt Chung', 
+		'menu_title' => 'Cài Đặt Chung', 
+		'menu_slug' => 'theme-settings', 
+		'capability' => 'edit_posts',
+		'redirect' => false
+	));
+}
